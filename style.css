@@ -7,34 +7,57 @@
     --VeryDarkBlue: hsl(229, 57%, 11%);
 
 }
-
+*{
+    padding: 0; margin: 0;
+}
 body{
-background-color: var(--VeryDarkBlue);
+
     
 }
-.bg-img{
-    margin: 50% auto;
-    
-}
+
 main{
+    background-color: var(--VeryDarkBlue);
+    max-width: 1440px;
+    
     display: flex;
-    position: absolute;
-    margin-left: 50%;
+    padding: 10px;
 }
+
+.bg-img{
+    margin-top: 25%;
+    max-width: 1440px;
+    width: auto;
+       
+}
+
 .container{
     background-color: var(--DarkBlue);
-    display: flex;
-    
+    margin: 30px;
+    position: absolute;
     
 }
+
 .left{
-    margin: 10px;
-    height: 50px;
-    width: 300px;
+width: 300px;
+margin-left: 600px;
     
 }
 .right{
-    margin: 10px;
-    height: 50px;
     width: 300px;
+    margin-left: 300px;
+    
+}
+.load{
+   
+    
+    margin: auto;
+    background-color: var(--VeryDarkBlue);
+    border-radius: 3em;
+
+}
+.loadcompleted{
+    height: 10px;
+    width: 80%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 3em;
 }
