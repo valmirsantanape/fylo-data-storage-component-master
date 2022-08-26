@@ -1,0 +1,40 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+:root{
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+
+}
+
+body{
+background-color: var(--VeryDarkBlue);
+    
+}
+.bg-img{
+    margin: 50% auto;
+    
+}
+main{
+    display: flex;
+    position: absolute;
+    margin-left: 50%;
+}
+.container{
+    background-color: var(--DarkBlue);
+    display: flex;
+    
+    
+}
+.left{
+    margin: 10px;
+    height: 50px;
+    width: 300px;
+    
+}
+.right{
+    margin: 10px;
+    height: 50px;
+    width: 300px;
+}
