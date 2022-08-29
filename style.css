@@ -1,2 +1,54 @@
+*{
+    margin: 0;
+    font-family: Raleway;
+}
 .atribution {font-size: 11px; text-align: center;}
 .atribution a { color: hsl(228, 45%, 44%);}
+
+:root{
+    box-sizing: border-box;
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    background-color: #ddd;
+    padding: 70px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.content{
+    background-color: hsl(229, 7%, 55%);
+    height: 250px;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.content .gradient{
+    width: 550px;
+    position: relative;
+}
+.content .inner{
+    display: flex;
+    position: relative;
+    width: fit-content;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.content .inner .left-side
