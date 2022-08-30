@@ -1,54 +1,55 @@
 *{
     margin: 0;
-    font-family: Raleway;
 }
-.atribution {font-size: 11px; text-align: center;}
-.atribution a { color: hsl(228, 45%, 44%);}
-
 :root{
-    box-sizing: border-box;
     --Pale-Blue: hsl(243, 100%, 93%);
     --Grayish-Blue: hsl(229, 7%, 55%);
     --Dark-Blue: hsl(228, 56%, 26%);
     --Very-Dark-Blue: hsl(229, 57%, 11%);
-
 }
-
 body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 }
-
-.container{
-    background-color: #ddd;
-    padding: 70px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
+.left-side{
+    margin: 10px;
+    background-color: var(--Dark-Blue);
+    width: fit-content;
+    padding: 30px 100px 30px 20px;
+    border-top-right-radius: 6em;
+}
+.logo-left{
+    margin: 10px;
 }
 .content{
-    background-color: hsl(229, 7%, 55%);
-    height: 250px;
-    display: flex;
-    flex-direction: column-reverse;
-
-}
-.content .gradient{
-    width: 550px;
-    position: relative;
-}
-.content .inner{
-    display: flex;
-    position: relative;
-    width: fit-content;
-    top: 32%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 10px;
     align-items: center;
-}
+    justify-content: center;
 
-.content .inner .left-side
+}
+.icons-left{
+    background-color:var(--Very-Dark-Blue);
+    padding: 1em;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+}
+.right-side{
+    margin: 10px;
+    background-color: var(--Dark-Blue);
+    width: fit-content;
+    padding: 30px;
+    color: #ddd;
+}
+.load-bar{
+    background-color: var(--Very-Dark-Blue);
+    margin: 10px;
+    padding: 2px;
+    border-radius: 2em;
+    
+}
+.load{
+    width: 75%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 11px;
+    border-radius: 2em;
+}
