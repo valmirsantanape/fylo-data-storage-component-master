@@ -7,49 +7,101 @@
     --Dark-Blue: hsl(228, 56%, 26%);
     --Very-Dark-Blue: hsl(229, 57%, 11%);
 }
+*{
+    margin: 0; padding: 0;
+}
 body{
-
-}
-.left-side{
-    margin: 10px;
-    background-color: var(--Dark-Blue);
-    width: fit-content;
-    padding: 30px 100px 30px 20px;
-    border-top-right-radius: 6em;
-}
-.logo-left{
-    margin: 10px;
-}
-.content{
-    margin: 10px;
-    align-items: center;
+    display: flex;
     justify-content: center;
-
+    align-items: center;
 }
-.icons-left{
-    background-color:var(--Very-Dark-Blue);
-    padding: 1em;
-    margin-left: 10px;
-    border-radius: 10px;
+main{
+    background-color: var(--Very-Dark-Blue);
+    max-width: 1440px;
+    margin: auto;
+    max-height: 100vh;
+    padding-top: 370px;
+    width: 100%;
+}
+picture > img{
     
 }
-.right-side{
-    margin: 10px;
+.container{
+    display: flex;
+    position: relative ;
+    bottom: 540px;
+    left: 200px;
+    padding: 10px;
+}
+.left-side{
     background-color: var(--Dark-Blue);
     width: fit-content;
     padding: 30px;
-    color: #ddd;
+    border-radius:10px 5rem 10px 10px;
+}
+.logo-left{
+    margin: 0px 130px 20px 0px;
+}
+.icons-left{
+    background-color: var(--Very-Dark-Blue);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+   
+}
+.right-side{
+    height: 100px;
+    color: white;
+    background-color: var(--Dark-Blue);
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+}
+.right-side > h4{
+    margin-left: 10px;
+}
+.right-side .card{
+    background-color: white;
+    color: black;
+    width: fit-content;
+    display: flex;
+    position: relative;
+    left: 300px;
+    bottom:30px;
+
 }
 .load-bar{
     background-color: var(--Very-Dark-Blue);
-    margin: 10px;
-    padding: 2px;
-    border-radius: 2em;
-    
+    width: 400px;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 1px;
+    display: flex;
+    align-items: center;
 }
 .load{
-    width: 75%;
     background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-    height: 11px;
-    border-radius: 2em;
+    height: 100%;
+    width: 75%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1px;
+}
+.ball{
+    background-color: #fff;
+    height: 13px;
+    width: 13px;
+    display: flex;
+    border-radius: 50%;
+}
+.text{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
 }
