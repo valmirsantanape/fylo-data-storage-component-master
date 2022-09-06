@@ -11,6 +11,9 @@
     margin: 0; padding: 0;
 }
 body{
+    background-color: var(--Very-Dark-Blue);
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,12 +22,10 @@ main{
     background-color: var(--Very-Dark-Blue);
     max-width: 1440px;
     margin: auto;
-    max-height: 100vh;
-    padding-top: 370px;
     width: 100%;
 }
 picture > img{
-    
+    margin-top: 380px;
 }
 .container{
     display: flex;
@@ -40,17 +41,16 @@ picture > img{
     border-radius:10px 5rem 10px 10px;
 }
 .logo-left{
-    margin: 0px 130px 20px 0px;
+    margin: 10px 130px 20px 0px;
 }
 .icons-left{
     background-color: var(--Very-Dark-Blue);
     padding: 15px;
     border-radius: 10px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-   
+    margin-right: 20px;
+}
+.content{
+    display: flex;
 }
 .right-side{
     height: 100px;
@@ -58,20 +58,38 @@ picture > img{
     background-color: var(--Dark-Blue);
     margin-left: 20px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
     margin-top: 50px;
 }
-.right-side > h4{
-    margin-left: 10px;
+.relative{
+    position: absolute;
+    left: 620px;
+
 }
-.right-side .card{
+.card{
+    border-radius: 10px 10px 0px;
     background-color: white;
+    padding: 1.2rem 1.6rem;
     color: black;
     width: fit-content;
-    display: flex;
-    position: relative;
     left: 300px;
     bottom:30px;
+}
+.card p {
+    font-size: 14px;
+}
+.card p strong{
+    font-size: 1.6rem;
+}
+.triangle{
+    border-top: 10px solid white;
+    border-right: 10px solid white;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    height: 0px;
+    width: 0px;
+    display: flex;
+    margin-left: 134px;
 
 }
 .load-bar{
